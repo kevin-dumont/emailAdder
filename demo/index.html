@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo EmailAdder - plugin jQuery</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Démo EmailAdder <small>Plugin jQuery</small></h1>
+			<p>Créez facilement vos formulaires d'envoi de mail.</p>
+			<p><a class="btn btn-primary btn-lg" role="button" href="https://github.com/sygmaa/emailAdder">GitHub</a></p>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<h2>Utilisation <small>classique</small></h2>
+
+		<blockquote class="row">
+			<div class="form-group col-md-6">
+				<div class="form-group">
+					<label class="form-label" for="emailAdder">Champs classique emailAdder :</label>
+					<input class="form-control" type="text" id="emailAdder" placeholder="Vos e-mail">
+				</div>
+			</div>
+			<div class="col-md-6">
+				Entrez un e-mail puis insérez un espace, une virgule, un tiret, ou un underscore. Recommencez, supprimez-en un, puis deux. Copiez-collez en un, pas besoin d'espace.
+			</div>
+		</blockquote>
+
+		<h2><small>E-mails par défaut</small></h2>
+
+		<blockquote class="row">
+			<div class="col-md-6">
+				Utilisez l'attribut <strong>data-default</strong> pour spécifier une/plusieurs adresse(s) mail visibles dés le chargement de la page. Si les adresses ne sont pas du format e-mail, elles ne seront pas affichées.
+			</div>
+			<div class="form-group col-md-6">
+				<label class="form-label" for="emailAdder">Champs emailAdder avec valeurs par défaut :</label>
+				<input class="form-control" type="text" data-default="example1@ex.com, example2@ex.com" id="emailAdder2" placeholder="Vos e-mail">
+			</div>
+		</blockquote>
+
+		<h2>Obtenir les données <small>pour les traitements ajax</small></h2>
+		<div>
+			<p>Les données issues des champs emailAdder se récupèrent en javascript via la fonction jQuery <strong>emailAdderData()</strong> qui retournera un tableau contenant les emails entrés.</p>
+<pre><code>$(document).ready(function(){
+	$("Votre sélecteur").emailAdderData();
+});</code></pre>
+
+		<p><strong>Note : </strong>Pour la récupération en php, rien n'est à faire, un tableau sera disponible dans <strong>$_POST</strong>, ayant pour index l'attribut name du champ.</p>
+			
+		</div>
+		<footer>
+			<a href="http://kevindumont.fr/" title="DUMONT Kévin, CV">DUMONT Kévin</a> - 2014
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" src="emailAdder.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#emailAdder").emailAdder();
+		$("#emailAdder2").emailAdder();
+
+	});
+	</script>
+</body>
+</html>

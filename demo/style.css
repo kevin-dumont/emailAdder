@@ -1,0 +1,28 @@
+body {
+	font-family: 'Open Sans';
+}	
+h1 {
+	font-weight:700;
+}
+h2{
+	margin-bottom: 30px;
+}
+.row {
+	margin-top: 40px;
+}
+.jumbotron{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+footer{
+	text-align: right;
+	border-top: 1px solid #eee;
+	padding: 20px 0 20px;
+	margin-top: 20px;
+}
+p{
+	margin:20px;
+}
+footer{
+	margin-top: 60px;
+}
