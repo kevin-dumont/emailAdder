@@ -11,7 +11,7 @@ Plugin jQuery pour créer un champ de type input[text] qui permet
 d'ajouter/supprimer destinataires de façon ergonomique.
 
 **Mise en fonction :**  
-Entrez un e-mail dans le champs (e-mail valide) puis mettez un espace, un point un underscore ou une virgule pour passer au mail suivant. A ce moment, l'e-mail choisi s'insérera dans la liste. Vous pourrez alors en ajouter d'autres et/ou les supprimer.
+Entrez un e-mail dans le champs (e-mail valide) puis mettez un espace, un point un underscore ou une virgule pour passer au mail suivant, vous pouvez également appuyer sur la touche entrée. A ce moment, l'e-mail choisi s'insérera dans la liste. Vous pourrez alors en ajouter d'autres et/ou les supprimer.
 
 ## Installation
 
