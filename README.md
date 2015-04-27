@@ -2,7 +2,7 @@
 
 Auteur : **DUMONT Kevin**  
 License MIT  
-[Démo de emailAdder](http://projets.kevindumont.fr/emailAdder/ "Démo de email adder")
+[Démo de emailAdder](http://projects.kevindumont.fr/emailAdder/demo/ "Démo de email adder")
 
 
 ## Description
